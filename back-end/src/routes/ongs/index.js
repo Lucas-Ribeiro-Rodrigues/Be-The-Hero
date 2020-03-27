@@ -24,6 +24,6 @@ module.exports = (app) => {
         if (!ongName) {
             return res.status(400).send('No ong found with this ID')
         }
-        return res.json({ ongName })
+        return res.json(ongName)
     })
 }
